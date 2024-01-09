@@ -1,0 +1,25 @@
+-- WARNING: IT CAN AFFECT FROM HITBOX, BECAUSE OF TOUCHINTEREST IS APART OF KNIFE
+-- (Client Server Not FE)
+SizeX = 19.9 -- Maximum Size (Dont Put higher the Character will be Stuck or Freeze)
+SizeY = 2 -- Maximum Size
+SizeZ = 2 -- Maximum Size
+
+local Playeer = game:GetService('Players').LocalPlayer
+Playeer.Character.LeftLowerLeg.Size = Vector3.new(SizeX, SizeY, SizeZ)
+Playeer.Character.RightLowerLeg.Size = Vector3.new(SizeX, SizeY, SizeZ)
+Playeer.Character.LeftUpperLeg.Size = Vector3.new(SizeX, SizeY, SizeZ)
+Playeer.Character.RightUpperLeg.Size = Vector3.new(SizeX, SizeY, SizeZ)
+Playeer.Character.RightFoot.Size = Vector3.new(SizeX, SizeY, SizeZ)
+Playeer.Character.LeftFoot.Size = Vector3.new(SizeX, SizeY, SizeZ)
+Playeer.Character.LeftLowerLeg.CanCollide = false -- Make it instantly false, if true u will get stuck
+Playeer.Character.RightLowerLeg.CanCollide = false
+Playeer.Character.LeftUpperLeg.CanCollide = false
+Playeer.Character.RightUpperLeg.CanCollide = false
+Playeer.Character.RightFoot.CanCollide = false
+Playeer.Character.LeftFoot.CanCollide = false 
+Playeer.Character.LeftLowerLeg.Transparency = 0.9 -- Adjust as needed
+Playeer.Character.RightLowerLeg.Transparency = 0.9
+Playeer.Character.LeftUpperLeg.Transparency = 0.9
+Playeer.Character.RightUpperLeg.Transparency = 0.9
+Playeer.Character.RightFoot.Transparency = 0.9
+Playeer.Character.LeftFoot.Transparency = 0.9
